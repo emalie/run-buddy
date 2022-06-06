@@ -12,9 +12,7 @@
         <!-- navigation -->
         <header>
             <h1>
-                <a href="/">
-                RUN BUDDY
-                </a>
+                <a href="/">RUN BUDDY</a>
             </h1>
             <nav>
                 <!-- unordered list element -->
@@ -39,7 +37,7 @@
 
         <!-- hero/jumbotron -->
         <section class="hero" >
-            <div>
+            <div class="hero-cta">
                 <h2>Start Building Habits</h2>
                 <p>
                     seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.                
@@ -51,11 +49,11 @@
                 <h3>Get Started Today</h3>
                 <p>Fill out this form and one of our trainers will schedule a consult</p>
                 <form>
-                    <label for="name">Enter full name:</label>
+                    <label for="name">Your Name:</label>
                     <input type="text" placeholder="Your Name" id="name" name="name" class="form-input" />
-                    <label for="email">Enter email address:</label>
+                    <label for="email">Your Email:</label>
                     <input type="email " placeholder="Email Address" id="name" name="email" class="form-input" />
-                    <label for=" phone">Enter a telephone number:</label>
+                    <label for=" phone">Phone Number:</label>
                     <input type="text" placeholder="Phone Number" id="name" name="phone" class="form-input" />
                     <p>
                         Have you worked out with a trainer before?
@@ -146,10 +144,12 @@
                     </div>
                 </div>
             </div>        
-
+        </section>
         <!-- "meet the trainers" section --> 
-        <section>
-            <h2>Meet The Trainers</h2>
+        <section id="your-trainers">
+            <div class="flex-row">
+                <h2 class="section-title primary-border">Meet The Trainers</h2>
+            </div>
             <div class="trainers">
                 <!--first trainer bio-->
                 <article class="trainer">
@@ -164,13 +164,13 @@
                 </article>
                 <!--second trainer bio-->
                 <article class="trainer">
+                    <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
                     <div class="trainer-bio">
                         <h3 class="trainer-name">Joanna Gill</h3>
                         <h4 class="trainer-role">Endurance</h4>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
                         </p>
-                        <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
                     </div>
                 </article>
                 <!--third trainer bio-->
@@ -194,65 +194,45 @@
                 <div class="contact-info">
                     <div>
                         <!-- message input -->
-                        <h3>Run Buddy</h3>
-                        <p>
-                            Any questions or concerns before signing up?
-                            <br />
-                            Let us know and we'll be happy to talk to you!
-                        </p>
-                        <!-- address -->
-                        <address>
-                            55 Main Street  <br />
-                            Los Angeles, CA <br />
-                            90012 <br />
-                            P: <a href="tel:555.786.2839">555.RUN.BUDZ (555.786.2839)</a> <br />
-                            E: <a href="mailto://info@runbuddy.io>info@runbuddy.io</a>"
-                        </address>
-                    </div>
-
-                    <!-- contact us form -->
-                    <div class="contact-form">
-                        <h3>Contact Us</h3>
-                        <form>
-                            <label for="contact-name">Your  Name</label>
-                            <input type="text" id="contact-name" placeholder="Your Name" />
-                            <label for="contact-message">Message</label>
-                            <textarea id=" contact-message" placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                    
-                    <!-- map -->
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13222.712352885463!2d-118.25249186874437!3d34.05212778969338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6492741cb23%3A0x133bd3d8127aee45!2s55%20S%20Main%20St%2C%20Los%20Angeles%2C%20CA%2090012!5e0!3m2!1sen!2sus!4v1654367972570!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    <h3>Run Buddy</h3>
+                    <p>
+                        Any questions or concerns before signing up?
+                        <br />
+                        Let us know and we'll be happy to talk to you!
+                    </p>
+                    <!-- address -->
+                    <address>
+                        55 Main Street  <br />
+                        Los Angeles, CA <br />
+                        90012 <br />
+                        P: 555.RUN.BUDZ (555.786.2839) <br />
+                        E: <a href="mailto:info@runbuddy.io>info@runbuddy.io</a>"
+                    </address>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <!-- contact us form -->
+                <div class="contact-form">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <label for="contact-name">Your  Name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
+                        <label for="contact-message">Message</label>
+                        <textarea id=" contact-message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                    
+                <!-- map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13222.712352885463!2d-118.25249186874437!3d34.05212778969338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6492741cb23%3A0x133bd3d8127aee45!2s55%20S%20Main%20St%2C%20Los%20Angeles%2C%20CA%2090012!5e0!3m2!1sen!2sus!4v1654367972570!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-
         <!-- footer -->
         <footer>
             <h2>❤️ Made with love by Run Buddy.</h2>
             <div>
-                <a href="#">Read Our Privacy Policy</a>
+                <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
                 &copy; 2019 Run Buddy, Inc.
             </div>
         </footer>
     </body>
-
 </html>    
