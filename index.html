@@ -52,21 +52,26 @@
                     <label for="name">Your Name:</label>
                     <input type="text" placeholder="Your Name" id="name" name="name" class="form-input" />
                     <label for="email">Your Email:</label>
-                    <input type="email " placeholder="Email Address" id="name" name="email" class="form-input" />
+                    <input type="email " placeholder="Email Address" id="email" name="email" class="form-input" />
                     <label for=" phone">Phone Number:</label>
-                    <input type="text" placeholder="Phone Number" id="name" name="phone" class="form-input" />
+                    <input type="text" placeholder="Phone Number" id="phone" name="phone" class="form-input" />
                     <p>
                         Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
-                        <label for="trainer-yes">Yes</label>
-                        <input type="radio" name="trainer-confirm" id="trainer-no" />
-                        <label for="trainer-no">No</label>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                            <label for="trainer-yes">Yes</label>
+                        </span>
+
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-no" />
+                            <label for="trainer-no">No</label>
+                        </span>
                     </p>
                     <p>
-                        <label for="checkbox" >
-                            I acknowledge that I am at least 18 years of age. 
-                        </label>
-                        <input type="checkbox" name="age-confrm" id="checkbox" />
+                        <span class="checkbox-wrapper">
+                            <input type="checkbox" name="checkpoint" id="checkbox" />
+                            <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+                        </span>
                     </p>
                     <button type="submit">
                         Get Running!
@@ -94,7 +99,7 @@
             </div>
             <!-- step 1 -->
             <div class="step">
-                <h3>Step 1: </h3>
+                <h3>Step 1. </h3>
                 <div class="step-info">
                     <div class="step-img">
                         <img src="./assets/images/step-1.svg" alt="" />
@@ -107,7 +112,7 @@
             </div>
             <!-- step 2 -->
             <div class="step">
-                <h3>Step 2: </h3>
+                <h3>Step 2. </h3>
                 <div class="step-info">
                     <div class="step-img">
                         <img src="./assets/images/step-2.svg" alt="" />
@@ -120,7 +125,7 @@
             </div>
             <!-- step 3 -->
             <div class="step">
-                <h3>Step 3: </h3>
+                <h3>Step 3. </h3>
                 <div class="step-info">
                     <div class="step-img">
                         <img src="./assets/images/step-3.svg" alt="" />
@@ -133,7 +138,7 @@
             </div>
             <!-- step 4 -->
             <div class="step">
-                <h3>Step 4: </h3>
+                <h3>Step 4. </h3>
                 <div class="step-info">
                     <div class="step-img">
                         <img src="./assets/images/step-4.svg" alt="" />
@@ -177,7 +182,7 @@
                 <article class="trainer">
                     <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
                     <div class="trainer-bio">
-                        <h3 class="trainer-name">Harry Smith</h3>
+                        <h3 class="trainer-name">Harry "The Headband" Smith</h3>
                         <h4 class="trainer-role">Strength</h4>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
@@ -191,9 +196,11 @@
         <section id="reach-out" class="contact">
             <div class="flex-row">
                 <h2 class="section-title secondary-border">Reach Out</h2>
-                <div class="contact-info">
-                    <div>
-                        <!-- message input -->
+            </div>
+
+            <div class="contact-info">
+                <div>
+                    <!-- message input -->
                     <h3>Run Buddy</h3>
                     <p>
                         Any questions or concerns before signing up?
@@ -203,27 +210,25 @@
                     <!-- address -->
                     <address>
                         55 Main Street  <br />
-                        Los Angeles, CA <br />
-                        90012 <br />
+                        Some Town, CA <br />
+                        12345 <br />
                         P: 555.RUN.BUDZ (555.786.2839) <br />
-                        E: <a href="mailto:info@runbuddy.io>info@runbuddy.io</a>"
+                        E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
                     </address>
                 </div>
-
-                    <!-- contact us form -->
+                <!-- contact us form -->
                 <div class="contact-form">
                     <h3>Contact Us</h3>
                     <form>
                         <label for="contact-name">Your  Name</label>
                         <input type="text" id="contact-name" placeholder="Your Name" />
                         <label for="contact-message">Message</label>
-                        <textarea id=" contact-message" placeholder="Message"></textarea>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                    
-                <!-- map -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13222.712352885463!2d-118.25249186874437!3d34.05212778969338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6492741cb23%3A0x133bd3d8127aee45!2s55%20S%20Main%20St%2C%20Los%20Angeles%2C%20CA%2090012!5e0!3m2!1sen!2sus!4v1654367972570!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13222.712352885463!2d-118.25249186874437!3d34.05212778969338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6492741cb23%3A0x133bd3d8127aee45!2s55%20S%20Main%20St%2C%20Los%20Angeles%2C%20CA%2090012!5e0!3m2!1sen!2sus!4v1654367972570!5m2!1sen!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>
         <!-- footer -->
